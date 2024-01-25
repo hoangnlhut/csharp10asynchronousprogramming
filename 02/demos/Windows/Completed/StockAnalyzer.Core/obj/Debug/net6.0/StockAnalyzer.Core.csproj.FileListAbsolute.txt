@@ -1,0 +1,12 @@
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\bin\Debug\net6.0\StockAnalyzer.Core.deps.json
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\bin\Debug\net6.0\StockAnalyzer.Core.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\bin\Debug\net6.0\StockAnalyzer.Core.pdb
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.csproj.AssemblyReference.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.AssemblyInfoInputs.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.AssemblyInfo.cs
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.csproj.CoreCompileInputs.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\refint\StockAnalyzer.Core.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\StockAnalyzer.Core.pdb
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Completed\StockAnalyzer.Core\obj\Debug\net6.0\ref\StockAnalyzer.Core.dll

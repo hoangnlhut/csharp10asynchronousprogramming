@@ -1,0 +1,15 @@
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\StockAnalyzer.AttachedDetatched.csproj.AssemblyReference.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\StockAnalyzer.AttachedDetatched.GeneratedMSBuildEditorConfig.editorconfig
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\StockAnalyzer.AttachedDetatched.AssemblyInfoInputs.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\StockAnalyzer.AttachedDetatched.AssemblyInfo.cs
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\StockAnalyzer.AttachedDetatched.csproj.CoreCompileInputs.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\bin\Debug\net7.0\StockAnalyzer.AttachedDetatched.exe
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\bin\Debug\net7.0\StockAnalyzer.AttachedDetatched.deps.json
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\bin\Debug\net7.0\StockAnalyzer.AttachedDetatched.runtimeconfig.json
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\bin\Debug\net7.0\StockAnalyzer.AttachedDetatched.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\bin\Debug\net7.0\StockAnalyzer.AttachedDetatched.pdb
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\StockAnalyzer.AttachedDetatched.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\refint\StockAnalyzer.AttachedDetatched.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\StockAnalyzer.AttachedDetatched.pdb
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\StockAnalyzer.AttachedDetatched.genruntimeconfig.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\StockAnalyzer.AttachedDetatched\obj\Debug\net7.0\ref\StockAnalyzer.AttachedDetatched.dll

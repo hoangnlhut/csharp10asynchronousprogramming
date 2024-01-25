@@ -42,3 +42,36 @@ public class StockService : IStockService
         }
     }
 }
+
+public class MockStockService : IStockService
+{
+    // using for testing that don't need to asynchronously
+    public Task<IEnumerable<StockPrice>>
+        GetStockPricesFor(string stockIdentifier,
+                          CancellationToken cancellationToken)
+    {
+       var stocks = new List<StockPrice>()
+        {
+            new StockPrice()
+            {
+                Identifier = "MSFT",
+                Change = 0.5m,
+                ChangePercent = 0.75m
+            },
+            new StockPrice()
+            {
+                Identifier = "GOOGL",
+                Change = 0.5m,
+                ChangePercent = 0.75m
+            },
+            new StockPrice()
+            {
+                Identifier = "CCC",
+                Change = 0.5m,
+                ChangePercent = 0.75m
+            }
+        };
+
+        return Task.FromResult(stocks.Where(x => x.Identifier == stockIdentifier));
+    }
+}

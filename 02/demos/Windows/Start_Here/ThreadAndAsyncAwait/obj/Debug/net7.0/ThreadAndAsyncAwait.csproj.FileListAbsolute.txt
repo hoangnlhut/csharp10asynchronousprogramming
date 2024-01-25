@@ -1,0 +1,15 @@
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\bin\Debug\net7.0\ThreadAndAsyncAwait.exe
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\bin\Debug\net7.0\ThreadAndAsyncAwait.deps.json
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\bin\Debug\net7.0\ThreadAndAsyncAwait.runtimeconfig.json
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\bin\Debug\net7.0\ThreadAndAsyncAwait.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\bin\Debug\net7.0\ThreadAndAsyncAwait.pdb
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ThreadAndAsyncAwait.csproj.AssemblyReference.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ThreadAndAsyncAwait.GeneratedMSBuildEditorConfig.editorconfig
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ThreadAndAsyncAwait.AssemblyInfoInputs.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ThreadAndAsyncAwait.AssemblyInfo.cs
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ThreadAndAsyncAwait.csproj.CoreCompileInputs.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ThreadAndAsyncAwait.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\refint\ThreadAndAsyncAwait.dll
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ThreadAndAsyncAwait.pdb
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ThreadAndAsyncAwait.genruntimeconfig.cache
+E:\LEARNING\SELF_TRAINING_FOLDER\.netcsharp_github\csharp10asynchronousprogramming\02\demos\Windows\Start_Here\ThreadAndAsyncAwait\obj\Debug\net7.0\ref\ThreadAndAsyncAwait.dll
