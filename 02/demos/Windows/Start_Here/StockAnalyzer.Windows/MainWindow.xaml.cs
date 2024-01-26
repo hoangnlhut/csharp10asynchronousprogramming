@@ -25,6 +25,7 @@ public partial class MainWindow : Window
     private static string API_URL = "https://ps-async.fekberg.com/api/stocks";
     private Stopwatch stopwatch = new Stopwatch();
     CancellationTokenSource? cancellationTokenSource;
+    private Random random = new Random();
 
     public MainWindow()
     {
@@ -415,7 +416,7 @@ public partial class MainWindow : Window
     }
 
     //Search click for using TaskCompletionSource using threadPool
-    private async void Search_Click(object sender, RoutedEventArgs e)
+    private async void Search_ClickThreadPool(object sender, RoutedEventArgs e)
     {
         try
         {
@@ -433,6 +434,191 @@ public partial class MainWindow : Window
         {
             AfterLoadingStockData();
         }
+    }
+
+    // Search Click using ConcurrentBag to collect data from Parallel.Invoke ( many task to run concurrently)
+    // NOTE: this way to block calling thread
+    private async void Search_ClickParallel(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            BeforeLoadingStockData();
+
+            var stocks = new Dictionary<string, IEnumerable<StockPrice>>
+            {
+                { "MSFT", Generate("MSFT")},
+                { "GOOGL", Generate("GOOGL")},
+                { "AAPL", Generate("AAPL")},
+                { "CAT", Generate("CAT")},
+            };
+
+            var bag = new ConcurrentBag<StockCalculation>();
+
+            //this below code run synchronous means it completes all parralel and then run next statement result = stocks.Values.SelectMany(x => x);
+            //NOTE: IT WILL BLOCK CALLING THREAD
+            Parallel.Invoke(
+                () =>
+                {
+                    var msft = Calculate(stocks["MSFT"]);
+                    bag.Add(msft);
+                },
+                () =>
+                {
+                    var googl = Calculate(stocks["GOOGL"]);
+                    bag.Add(googl);
+                },
+                () =>
+                {
+                    var aapl = Calculate(stocks["AAPL"]);
+                    bag.Add(aapl);
+                },
+                () =>
+                {
+                    var cat = Calculate(stocks["CAT"]);
+                    bag.Add(cat);
+                }
+                );
+
+            ///Set MaxDegreeOfParallelism = 2 is set 2 concurrent tasks is run at the same time.
+            ///  and with this configuration is seem to be lower than set to default value
+            //Parallel.Invoke(
+            //    new ParallelOptions {  MaxDegreeOfParallelism = 2},
+            //() =>
+            //{
+            //    var msft = Calculate(stocks["MSFT"]);
+            //    bag.Add(msft);
+            //},
+            //() =>
+            //{
+            //    var googl = Calculate(stocks["GOOGL"]);
+            //    bag.Add(googl);
+            //},
+            //() =>
+            //{
+            //    var aapl = Calculate(stocks["AAPL"]);
+            //    bag.Add(aapl);
+            //},
+            //() =>
+            //{
+            //    var cat = Calculate(stocks["CAT"]);
+            //    bag.Add(cat);
+            //}
+            //);
+
+            //var result = stocks.Values.SelectMany(x => x);
+            Stocks.ItemsSource = bag;
+        }
+        catch (Exception ex)
+        {
+            Notes.Text = ex.Message;
+        }
+        finally
+        {
+            AfterLoadingStockData();
+        }
+    }
+    
+    // Search click using both parallel and asynchronous programming
+    private async void Search_ClickParallelAndAsynchronous(object sender, RoutedEventArgs e)
+    {
+        
+            BeforeLoadingStockData();
+
+            var stocks = new Dictionary<string, IEnumerable<StockPrice>>
+            {
+                { "MSFT", Generate("MSFT")},
+                { "GOOGL", Generate("GOOGL")},
+                { "AAPL", Generate("AAPL")},
+                { "CAT", Generate("CAT")},
+            };
+
+            var bag = new ConcurrentBag<StockCalculation>();
+
+        try
+        {
+            await Task.Run(() =>
+            {
+                try
+                {
+                    Parallel.Invoke(
+                       () =>
+                       {
+                           var msft = Calculate(stocks["MSFT"]);
+                           bag.Add(msft);
+                           throw new Exception("MSFT");
+                       },
+                       () =>
+                       {
+                           var googl = Calculate(stocks["GOOGL"]);
+                           bag.Add(googl);
+                           throw new Exception("GOOGL");
+                       },
+                       () =>
+                       {
+                           var aapl = Calculate(stocks["AAPL"]);
+                           bag.Add(aapl);
+                           throw new Exception("AAPL");
+                       },
+                       () =>
+                       {
+                           var cat = Calculate(stocks["CAT"]);
+                           bag.Add(cat);
+                           throw new Exception("CAT");
+                       }
+                       );
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+            }) ;
+            Stocks.ItemsSource = bag;
+        }
+        // Should not add catch for task.Run because we run parallel task underground so should not to let user know that
+        catch (Exception ex)
+        {
+            Notes.Text = ex.Message;
+        }
+        finally
+        {
+            AfterLoadingStockData();
+        }
+    }
+    private StockCalculation Calculate(IEnumerable<StockPrice> prices)
+    {
+        #region Start stopwatch
+        var calculation = new StockCalculation();
+        var watch = new Stopwatch();
+        watch.Start();
+        #endregion
+
+        var end = DateTime.UtcNow.AddSeconds(4);
+
+        // Spin a loop for a few seconds to simulate load
+        while (DateTime.UtcNow < end)
+        { }
+
+        #region Return a result
+        calculation.Identifier = prices.First().Identifier;
+        calculation.Result = prices.Average(s => s.Open);
+
+        watch.Stop();
+
+        calculation.TotalSeconds = watch.Elapsed.Seconds;
+
+        return calculation;
+        #endregion
+    }
+
+
+    private IEnumerable<StockPrice> Generate(string stockIdentifier)
+    {
+        return Enumerable.Range(1, random.Next(10, 250))
+            .Select(x => new StockPrice
+            {
+                Identifier = stockIdentifier,
+                Open = random.Next(10, 1024)
+            }); 
     }
 
     private  Task<IEnumerable<StockPrice>> SearchForStocksTaskCompletion()
